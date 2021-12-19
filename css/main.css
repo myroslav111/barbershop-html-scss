@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap");
+body {
+  font-family: "Open Sans";
+}
+
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+li {
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/*# sourceMappingURL=main.css.map */

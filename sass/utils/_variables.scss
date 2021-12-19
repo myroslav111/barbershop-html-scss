@@ -1,0 +1,30 @@
+$fontFamily: "Open Sans";
+$fontSize: 14px;
+
+// key color
+$colors: (
+    'colorTextHero': rgba(157, 164, 189, 0.6),
+    'colorTitleHero': #ffffff,
+    'colotSecondTextHero': #9DA4BD,
+    'colorMain': #303030,
+    'colorSecond': #555555,
+    'colorTextAccent': #FF6C00,
+);
+@function getColor($key) {
+@return map-get($colors, $key);
+}
+
+// key font
+$fontSize: (
+    'titleHero': 48px,
+    'titleFlow': 42px,
+    'title': 28px,
+    'textHero': 11px,
+    'textDescriptionHero': 16px,
+    'textDescriptionTeam': 14px,
+    'textButton': 12px,
+    'textAny': 18px,
+);
+@function getFont($key) {
+@return map-get($fontSize , $key);
+}

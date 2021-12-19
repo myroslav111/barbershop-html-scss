@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AAIA,OAAO,CAAC,+GAAI,CKJZ,AAAA,IAAI,AAAA,CACA,WAAW,CHDF,WAAW,CGEvB,AACD,AAAA,EAAE,AAAA,CACE,UAAU,CAAG,GAAG,CAChB,aAAa,CAAE,GAAG,CAClB,YAAY,CAAE,GAAG,CACpB,AACD,AAAA,EAAE,AAAA,CACE,eAAe,CAAE,IAAI,CACrB,UAAU,CAAG,GAAG,CAChB,aAAa,CAAE,GAAG,CACrB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_mixin.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/utils/_function.scss",
+        "../sass/utils/_placeholders.scss",
+        "../sass/components/_body.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
