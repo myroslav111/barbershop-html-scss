@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -17,10 +17,14 @@
     <main>
         <section class="hero">
             <div class="container heroContainer">
-                <a class="logo" href="">
-                    logo
-                </a>
-                <button class="btnOpen" type="button">x</button>
+                <div class="hero__topLine">
+                    <a class="hero__logo" href="">
+                        <svg class="hero__item " width="68" height="55"><use href="./icon/symbol-defs.svg#icon-Logo"></use></svg>
+                    </a>
+                    <span class="hero__buttonBurger">
+                        <button class="btnOpen" type="button"><svg class="menu" width="40" height="40"><use href="icon/symbol-defs.svg#icon-menu_40px"></use></svg></button>
+                    </span>
+                </div>
                 <p class="hero__pretitleText">A hair salon for men in Kyiv</p>
                 <h1 class="hero__title">BarberShop</h1>
                 <p class="hero__subtitleText">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>

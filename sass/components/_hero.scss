@@ -1,0 +1,56 @@
+.hero {
+    padding-top: 40px;
+    padding-bottom: 183px;
+    background-image: url('../css/../images/heroFirst.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        background-image: url('../css/../images/heroFirst@2x.jpg') ;
+    }
+    &__topLine{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 112px;
+    }
+    &__pretitleText{
+        @extend %preTitleTextStyle;
+        color: getColor('colorTextHero');
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        &::before{
+        @extend %before;
+        margin-right: 20px;
+        }
+    }
+    &__title{
+        font-family: $fontsecond;
+        font-weight: bold;
+        font-size: getFont('titleHero');
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        color: getColor('colorTitleHero');
+        margin-bottom: 20px;
+    }
+    &__subtitleText{
+        @extend %subTitleTextStyle;
+        color: getColor('colotSecondTextHero');
+    }
+}
+.container{
+    @extend %container;   
+}
+.btnOpen{
+    background-color: transparent;
+    border: none;
+}
+.heroContainer{
+    max-width: 480px;
+    max-height: 580px;
+    min-width: 320px;
+}

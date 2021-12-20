@@ -1,0 +1,35 @@
+.description{
+    padding-top: 84px;
+    padding-bottom: 84px;
+    &__pretitleText{
+        @extend %preTitleTextStyle;
+        color: getColor('colorMain');
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        &::before{
+            @extend %before;
+            margin-right: 20px;
+        }
+    }
+    &__title{
+        font-family: $fontsecond;
+        font-weight: bold;
+        font-size: getFont('title');
+        line-height: 1.17;
+        letter-spacing: 0.05em;
+        color: getColor('colorMain');
+        margin-bottom: 20px;
+    }
+    &__subtitleText{
+        @extend %subTitleTextStyle;
+        color: getColor('colorSecond');
+        margin-bottom: 20px;
+    }
+    &__text{
+        font-size: getFont('textDescriptionTeam');
+        line-height: 1.85;
+        letter-spacing: 0.02em;
+        color: getColor('colorSecond');
+    }
+}

@@ -1,0 +1,24 @@
+%container{
+    padding-left: 31px;
+    padding-right: 31px;
+    margin-right: auto;
+    margin-left: auto;
+}
+%preTitleTextStyle{
+    font-weight: 600;
+    font-size: getFont('textHero');
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+%subTitleTextStyle{
+font-size: getFont('textDescriptionHero');
+line-height: 1.62;
+letter-spacing: 0.02em;
+}
+%before{
+content: '';
+display: inline-block;
+width: 60px;
+border-bottom: 1px solid getColor('colorTextHero');
+}
