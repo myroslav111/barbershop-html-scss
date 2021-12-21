@@ -1,0 +1,43 @@
+.price__pretitleText{
+    color: getColor('colorTextHero');
+}
+.price{
+    @extend %sectionPadingMobile;
+    background-color: getColor('backgroundPrimary');
+    &__btnCentr{
+        text-align: center;
+    }
+    &__button{
+        color: getColor('colorTitleHero');
+    }
+}
+.title{
+    @extend %titleBig;
+    margin-bottom: 44px;
+}
+.priceWrap{
+    padding: 30px;
+    background-image: getColor('backgrounColor');
+    margin-bottom: 80px;
+}
+.priceList__service{
+    font-size: getFont('textDescriptionTeam');
+    line-height: 2.14;
+    letter-spacing: 0.02em;
+    color: getColor('colotSecondTextHero');
+}
+.priceList__cost{
+    @extend .priceList__service;
+    // &::before{
+    //     content: '';
+    //     display: inline-block;
+    //     width: 10px;
+    //     border-bottom: 1px solid getColor('colorTextHero');
+    //     margin-right: 6px;
+    //     margin-left: 6px;
+    // }
+}
+.priceList__item{
+    display: flex;
+    justify-content: space-between;
+}

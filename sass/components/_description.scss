@@ -1,17 +1,5 @@
 .description{
-    padding-top: 84px;
-    padding-bottom: 84px;
-    &__pretitleText{
-        @extend %preTitleTextStyle;
-        color: getColor('colorMain');
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
-        &::before{
-            @extend %before;
-            margin-right: 20px;
-        }
-    }
+    @extend %sectionPadingMobile;
     &__title{
         font-family: $fontsecond;
         font-weight: bold;
@@ -27,9 +15,28 @@
         margin-bottom: 20px;
     }
     &__text{
-        // font-size: getFont('textDescriptionTeam');
-        // line-height: 1.85;
-        // letter-spacing: 0.02em;
-        // color: getColor('colorSecond');
+        font-size: getFont('textDescriptionTeam');
+        line-height: 1.85;
+        letter-spacing: 0.02em;
+        color: getColor('colorSecond');
+        margin-bottom: 40px;
     }
+}
+.button{
+    min-width: 160px;
+    min-height: 40px;
+    border: 1px solid getColor('colorTextAccent');
+    border-radius: 25px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: getFont('textButton');
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: getColor('colorMain');
+}
+.pretitleText{
+    @extend %preTitleTextStyle;
+    color: getColor('colorMain');
+    margin-bottom: 20px;
 }

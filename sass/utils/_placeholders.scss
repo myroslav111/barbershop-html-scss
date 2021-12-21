@@ -10,6 +10,13 @@
     line-height: 1.36;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    // white-space: nowrap;
+    &::before{
+        @extend %before;
+        margin-right: 20px;
+    }
 }
 %subTitleTextStyle{
 font-size: getFont('textDescriptionHero');
@@ -21,4 +28,16 @@ content: '';
 display: inline-block;
 width: 60px;
 border-bottom: 1px solid getColor('colorTextHero');
+}
+%titleBig{
+    font-family: $fontsecond;
+    font-weight: bold;
+    font-size: getFont('titleFlow');
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: getColor('colorTitleHero');
+}
+%sectionPadingMobile{
+    padding-top: 84px;
+    padding-bottom: 84px;
 }

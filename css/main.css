@@ -6,12 +6,22 @@
   margin-left: auto;
 }
 
-.hero__pretitleText, .description__pretitleText {
+.hero__pretitleText, .pretitleText {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__pretitleText::before, .pretitleText::before {
+  margin-right: 20px;
 }
 
 .hero__subtitleText, .description__subtitleText {
@@ -20,11 +30,25 @@
   letter-spacing: 0.02em;
 }
 
-.hero__pretitleText::before, .description__pretitleText::before {
+.hero__pretitleText::before, .pretitleText::before {
   content: '';
   display: inline-block;
   width: 60px;
   border-bottom: 1px solid rgba(157, 164, 189, 0.6);
+}
+
+.title {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.description, .price {
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
 
 body {
@@ -125,26 +149,6 @@ p {
   min-width: 320px;
 }
 
-.description {
-  padding-top: 84px;
-  padding-bottom: 84px;
-}
-
-.description__pretitleText {
-  color: #303030;
-  margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.description__pretitleText::before {
-  margin-right: 20px;
-}
-
 .description__title {
   font-family: "Raleway";
   font-weight: bold;
@@ -165,5 +169,68 @@ p {
   line-height: 1.85;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 40px;
+}
+
+.button {
+  min-width: 160px;
+  min-height: 40px;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.pretitleText {
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.price__pretitleText {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.price {
+  background-color: #111319;
+}
+
+.price__btnCentr {
+  text-align: center;
+}
+
+.price__button {
+  color: #ffffff;
+}
+
+.title {
+  margin-bottom: 44px;
+}
+
+.priceWrap {
+  padding: 30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#171A24), to(rgba(23, 26, 36, 0.2)));
+  background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  margin-bottom: 80px;
+}
+
+.priceList__service, .priceList__cost {
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
+}
+
+.priceList__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */
