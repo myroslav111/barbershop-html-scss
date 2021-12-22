@@ -1,0 +1,66 @@
+.benefits {
+    @extend %sectionPadingMobile;
+    &__title{
+        color: getColor('colorMain');
+    }
+    &__subtitleText{
+        line-height: 1.66;
+        letter-spacing: 0.02em;
+        color: getColor('colorSecond');
+        font-family: getFont('textAny');
+        margin-bottom: 20px;
+    }
+}
+.blocBenefits{
+    max-width: 418px;
+    margin: 0 auto;
+}
+.benefitsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    // margin: -15px;
+    &__item{
+        display: block;
+        text-align: center;
+        &:nth-child(even){
+            margin-top: 30px;
+        }
+        &:nth-child(odd){
+            margin-right: 30px;
+        }
+    }
+    &__number{
+        font-weight: bold;
+        font-size: getFont('titleFlow');
+        line-height: 1.35;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: getColor('colorMain');
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6px;
+        &::after{
+            content: '+';
+            font-weight: 600;
+            font-size: getFont('textDescriptionHero');
+            line-height: 1.37;
+            text-align: center;
+            color: getColor('colorTextAccent');
+            margin-top: 5px;
+
+        }
+    }
+    &__textList{
+        font-weight: 600;
+        font-size: getFont('textHero');
+        line-height: 1.36;
+        text-align: center;
+        color: getColor('colorMain');
+        display: inline-block;
+        max-width: 122px;
+    } 
+}
+.textList--gift{
+    max-width: 130px;
+}
