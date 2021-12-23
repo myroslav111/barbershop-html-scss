@@ -46,7 +46,7 @@
   color: #ffffff;
 }
 
-.description, .price, .benefits {
+.description, .price, .benefits, .masters {
   padding-top: 84px;
   padding-bottom: 84px;
 }
@@ -264,6 +264,7 @@ p {
 .benefitsList__item {
   display: block;
   text-align: center;
+  background-color: #F7F7F7;
 }
 
 .benefitsList__item:nth-child(even) {
@@ -272,6 +273,7 @@ p {
 
 .benefitsList__item:nth-child(odd) {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .benefitsList__number {
@@ -312,5 +314,72 @@ p {
 
 .textList--gift {
   max-width: 130px;
+}
+
+.masters {
+  background-color: #F7F7F7;
+}
+
+.masters__title {
+  color: #303030;
+}
+
+.mastersList__wrap {
+  margin-bottom: 30px;
+}
+
+.mastersList__bottom {
+  text-align: center;
+}
+
+.mastersList__item:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+.mastersList__name {
+  font-size: 18px;
+  line-height: 1.38;
+  letter-spacing: 0.02em;
+  color: #303030;
+  margin-bottom: 8px;
+}
+
+.mastersList__subname {
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FF6C00;
+  margin-bottom: 30px;
+}
+
+.socialNetworksList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socialNetworksList__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.socialNetworksList__item:not(:last-child) {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */

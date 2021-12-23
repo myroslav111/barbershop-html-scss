@@ -9,7 +9,8 @@ $colors: (
     'colorSecond': #555555,
     'colorTextAccent': #FF6C00,
     'backgroundPrimary': #111319,
-    'backgrounColor': linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%)
+    'backgrounColor': linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%),
+    'backgrounColorWhit': #F7F7F7
 );
 @function getColor($key) {
 @return map-get($colors, $key);

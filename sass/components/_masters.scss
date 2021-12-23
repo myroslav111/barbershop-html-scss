@@ -1,0 +1,56 @@
+.masters{
+    @extend %sectionPadingMobile;
+    background-color: getColor('backgrounColorWhit');
+    &__title{
+        color: getColor('colorMain');
+    }
+}
+.mastersList__wrap {
+    margin-bottom: 30px;
+
+}
+.mastersList__bottom {
+    text-align: center;
+    // margin-bottom: 64px;
+
+}
+// .mastersList:not(:last-child) {
+//     margin-bottom: 64px;
+// }
+.mastersList{
+    &__item:not(:last-child){
+        margin-bottom: 64px;
+    }
+    &__name{
+        font-size: getFont('textAny');
+        line-height: 1.38;
+        letter-spacing: 0.02em;
+        color: getColor('colorMain');
+        margin-bottom: 8px;
+    }
+    &__subname{
+        font-size: getFont('textDescriptionTeam');
+        line-height: 1.35;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: getColor('colorTextAccent');
+        margin-bottom: 30px;
+    }
+}
+.socialNetworksList{
+    display: flex;
+    justify-content: center;
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: 12px;
+        border-radius: 50%;
+        background-color: getColor('colorTitleHero');        
+    }
+    &__item:not(:last-child){
+        margin-right: 10px;
+    }
+}
