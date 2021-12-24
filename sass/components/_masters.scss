@@ -14,9 +14,6 @@
     // margin-bottom: 64px;
 
 }
-// .mastersList:not(:last-child) {
-//     margin-bottom: 64px;
-// }
 .mastersList{
     &__item:not(:last-child){
         margin-bottom: 64px;

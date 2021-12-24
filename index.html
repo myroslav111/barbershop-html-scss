@@ -200,12 +200,24 @@
         <section class="portfolio">
             <div class="container portfolioContainer">
                 <h2 hidden> portfolio</h2>
-                <p class="portfolio__pretitleText"></p>
+                <p class="portfolio__pretitleText pretitleText">На латинском языке “барба” означает “борода”</p>
                 <ul class="portfolioList list">
-                    <li class="portfolioList__item"><img src="" alt="барбер стрижет клиента" width="418" height="360"></li>
-                    <li class="portfolioList__item"><img src="" alt="барбер стрижет клиента" width="418" height="360"></li>
-                    <li class="portfolioList__item"><img src="" alt="барбер стрижет клиента" width="418" height="360"></li>
-                    <li class="portfolioList__item"><img src="" alt="барбер стрижет клиента" width="418" height="360"></li>
+                    <li class="portfolioList__item">
+                        <picture>
+                            <source srcset="./images/imagefirst.webp 1x, ./images/imagefirst@2x.webp 2x" type="image/webp">
+                            <img src="./images/imagefirst.jpg" alt="барбер стрижет клиента" width="418" height="360"></picture></li>
+                    <li class="portfolioList__item">
+                        <picture>
+                            <source srcset="./images/imageSecond.webp 1x, ./images/imageSecond@2x.webp 2x" type="image/webp">
+                            <img src="./images/imageSecond.jpg" alt="барбер стрижет клиента" width="418" height="360"></picture></li>
+                    <li class="portfolioList__item">
+                        <picture>
+                            <source srcset="./images/imageThird.webp 1x, ./images/imageThird@2x.webp 2x" type="image/webp">
+                            <img src="./images/imageThird.jpg" alt="барбер стрижет клиента" width="418" height="360"></picture></li>
+                    <li class="portfolioList__item">
+                        <picture>
+                            <source srcset="./images/imageFourth.webp 1x, ./images/imageFourth@2x.webp 2x" type="image/webp">
+                            <img src="./images/imageFourth.jpg" alt="барбер стрижет клиента" width="418" height="360"></picture></li>
                 </ul>               
             </div>
         </section>
@@ -215,10 +227,10 @@
                 <form class="formOnline" action="#">
                     <div class="formOnlineWrap">
                         <input class="formInput" type="text" name="online-name" placeholder="Имя*" >
-                        <input class="formInput" type="text" name="tel" placeholder="Телефон*" >                        
+                        <input class="formInput" type="tel" name="telnamber" placeholder="Телефон*" >                        
                     </div>
-                    <textarea class="formText" name="formText" id="" cols="30" rows="10" placeholder="сообщение"></textarea>
-                    <button class="form__button" type="button">отправить</button>
+                    <textarea class="formTextarea" name="formText" id="" cols="30" rows="10" placeholder="сообщение"></textarea>
+                    <button class="form__button button" type="button">отправить</button>
                 </form>
             </div>
         </section>
@@ -228,39 +240,41 @@
                 <address class="contactsAddress">
                     <ul class="contactsList list">
                         <li class="contactsList__item">
-                            <a class="contactsList__link" href="">
-                                <svg class="contactsList__icon">
-                                    <use></use>
+                            <a class="contactsList__link location" href="">
+                                <svg class="contactsList__icon" width="24" height="24">
+                                    <use href="./icon/symbol-defs.svg#icon-map-pin"></use>
                                 </svg>ул. Васильковая, 7А, Киев, 08132
                             </a>
                         </li>
                         <li class="contactsList__item">
-                            <a class="contactsList__link" href="">
-                                <svg class="contactsList__icon">
-                                    <use></use>
+                            <a class="contactsList__link tell" href="">
+                                <svg class="contactsList__icon" width="24" height="24">
+                                    <use href="./icon/symbol-defs.svg#icon-phone"></use>
                                 </svg>+38 044 111 11 11
                             </a>
                         </li>
                         <li class="contactsList__item">
-                            <a class="contactsList__link" href="">
-                                <svg class="contactsList__icon">
-                                    <use></use>
+                            <a class="contactsList__link mail" href="">
+                                <svg class="contactsList__icon" width="24" height="24">
+                                    <use href="./icon/symbol-defs.svg#icon-mail"></use>
                                 </svg>barbershop@email.com
                             </a>
                         </li>
                     </ul>
                 </address>
-                <p class="contacts__timeWork">время работы</p>
+                <p class="contacts__timeWork pretitleText">время работы</p>
                 <p class="contacts__time">Ежедневно с 9:00 до 22:00</p>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <p class="footer__copy">&#169;Copyright 2020</p>
-        <ul class="footerList list">
-            <li class="footerList__item"><a class="footerList__link" href="">Instagram</a></li>
-            <li class="footerList__item"><a class="footerList__link" href="">Youtube</a></li>
-        </ul>
+        <div class="container footerContainer">            
+            <ul class="footerList list">
+                <li class="footerList__item"><a class="footerList__link linkFooter--line" href="">Instagram</a></li>
+                <li class="footerList__item"><a class="footerList__link" href="">Youtube</a></li>
+            </ul>
+            <p class="footer__copy">&#169;Copyright 2020</p>
+        </div>
     </footer>
 </body>
 </html>

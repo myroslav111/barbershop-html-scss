@@ -1,0 +1,47 @@
+.form{
+    @extend %sectionPadingMobile;
+    background-color: getColor('backgrounColorFooter');
+}
+.formContainer{
+    text-align: center;
+}
+.form__title{
+    margin-bottom: 44px;
+}
+.formInput{
+    width: 100%;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid getColor('colorInputBorderBottom');
+
+    font-weight: 600;
+    font-size: getFont('textHero');
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: getColor('colorInputBorderBottom');
+    &:not(:last-child){
+        margin-bottom: 44px;
+    }
+}
+.formOnlineWrap{
+    margin-bottom: 44px;
+}
+.formTextarea{
+    width: 100%;
+    max-height: 76px;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid getColor('colorInputBorderBottom');
+    
+    font-weight: 600;
+    font-size: getFont('textHero');
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: getColor('colorInputBorderBottom');
+    margin-bottom: 44px;
+}
+.form__button{
+    color: getColor('colorTitleHero');
+}

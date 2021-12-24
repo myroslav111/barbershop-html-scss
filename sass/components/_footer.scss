@@ -1,0 +1,36 @@
+.footer{
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
+.footerList{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    &__item{
+        font-weight: 600;
+        font-size: getFont('textHero');
+        line-height: 1.36;
+        letter-spacing: 0.2em;
+        color: getColor('colorMain');
+    }
+    &__link{
+        color: getColor('colorMain');
+    }
+}
+.footer__copy{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    color: #9DA4BD;
+}
+.linkFooter--line{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    &::before{
+        @extend %before;
+        margin-right: 40px;
+    }
+}
+

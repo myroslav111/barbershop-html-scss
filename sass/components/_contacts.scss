@@ -1,0 +1,49 @@
+.contacts{
+    @extend %sectionPadingMobile;
+    // max-height: 496px;
+    background-image: 
+    url('../css/../images/imgbgbottom.jpg'), url('../css/../images/Bg.jpg');
+    // url('../css/../images/imgbgbottom.jpg')url('../css/../images/Bg.jpg'),,
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.contacts__title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contactsAddress{
+    margin-bottom: 44px;    
+}
+.contactsList{
+    text-align: start;
+    &__link{
+        font-size: getFont('textAny');
+        line-height: 1.66;
+        letter-spacing: 0.02em;
+        color: getColor('colotSecondTextHero');
+        display: flex;
+        align-items: center;
+    }
+    &__item:not(:last-child){
+        margin-bottom: 20px;
+
+    }
+}
+.contacts__timeWork{
+    color: getColor('colorTitleHero');
+    margin-bottom: 20px;
+}
+.contacts__time{
+    font-size: getFont('textAny');
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    color: getColor('colotSecondTextHero');
+}
+.contactsList__icon{
+    margin-right: 16px;
+}
+.location{
+    align-items: flex-end;
+}
