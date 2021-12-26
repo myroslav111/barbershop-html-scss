@@ -1,0 +1,68 @@
+.menuMobileContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    // opacity: 1;
+    opacity: 0;
+    // transform: translateX(0);
+    transform: translateX(100%);
+    background-color: getColor('colorTitleHero');
+    padding: 48px 31px 48px 40px;
+}
+.menuMobile__topLine{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+.menuMobile__link{
+    font-weight: 600;
+    font-size: getFont('textAny');
+    line-height: 1.38;
+    letter-spacing: 0.1em;
+    color: getColor('colorMain');
+}
+.menuMobile__navList {
+    margin-bottom: 64px;
+}
+.mrnuMobile__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+.menuMobile__link {
+}
+.menuMobileTell {
+    display: block;
+    margin-bottom: 24px;
+}
+.menuMobile__button {
+    margin-bottom: 64px;
+}
+.button {
+}
+.menuMobile__socialNetworksList {
+    display: flex;
+    flex-direction: column;
+}
+.menuMobile__socialNetworksItem:not(:last-child) {
+    margin-bottom: 24px;
+}
+.menuMobile__socialNetworksItem:nth-child(2){
+    margin-left: 100px;
+}
+.menuMobile____socialNetworksLink {
+    font-weight: 600;
+    font-size: getFont('textDescriptionTeam');
+    line-height: 1.35;
+    letter-spacing: 0.2em;
+    color: getColor('colorMain');
+}
+.beforMobileMenu{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    &::before{
+        @extend %before;
+        margin-right: 40px;
+    }    
+}
