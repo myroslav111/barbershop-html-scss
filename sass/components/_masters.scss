@@ -45,7 +45,13 @@
         height: 44px;
         padding: 12px;
         border-radius: 50%;
-        background-color: getColor('colorTitleHero');        
+        background-color: getColor('colorTitleHero');
+        transition-property: fill;    
+        transition-duration: 250ms; 
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus{
+            fill: getColor('colorTextAccent');
+        }
     }
     &__item:not(:last-child){
         margin-right: 10px;

@@ -45,12 +45,7 @@
 .container{
     @extend %container;   
 }
-.btn{
-    background-color: transparent;
-    border: none;
-    height: 40px;
-    width: 40px;
-}
+
 .heroContainer{
     max-width: 480px;
     max-height: 580px;

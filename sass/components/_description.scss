@@ -22,19 +22,7 @@
         margin-bottom: 40px;
     }
 }
-.button{
-    min-width: 160px;
-    min-height: 40px;
-    border: 1px solid getColor('colorTextAccent');
-    border-radius: 25px;
-    background-color: transparent;
-    font-weight: 600;
-    font-size: getFont('textButton');
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: getColor('colorMain');
-}
+
 .pretitleText{
     @extend %preTitleTextStyle;
     color: getColor('colorMain');

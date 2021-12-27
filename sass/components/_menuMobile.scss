@@ -1,16 +1,21 @@
-.menuMobileContainer{
+.menu-container{
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    // opacity: 1;
-    opacity: 0;
+    opacity: 1;
+    // opacity: 0;
     // transform: translateX(0);
     transform: translateX(100%);
     background-color: getColor('colorTitleHero');
     padding: 48px 31px 48px 40px;
+    transition: transform 250ms ease-in-out;
 }
+.menu-container.is-open{
+    transform: translateX(0);
+}
+
 .menuMobile__topLine{
     display: flex;
     justify-content: flex-end;
@@ -22,6 +27,12 @@
     line-height: 1.38;
     letter-spacing: 0.1em;
     color: getColor('colorMain');
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        color: getColor('colorTextAccent');
+    }
 }
 .menuMobile__navList {
     margin-bottom: 64px;

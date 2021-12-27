@@ -1,0 +1,28 @@
+.btn{
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    cursor: pointer;
+}
+.button{
+    min-width: 160px;
+    min-height: 40px;
+    border: 1px solid getColor('colorTextAccent');
+    border-radius: 25px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: getFont('textButton');
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: getColor('colorMain');
+    transition-property: background-color, color ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        background-color: getColor('colorTextAccent');
+        color: getColor('colorTitleHero');
+    }
+}
