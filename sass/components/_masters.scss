@@ -1,18 +1,30 @@
 .masters{
     @extend %sectionPadingMobile;
     background-color: getColor('backgrounColorWhit');
+    @media screen and (min-width: 768px){
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
     &__title{
         color: getColor('colorMain');
     }
 }
+
+.mastersContainer{
+    @media screen and (min-width: 768px){
+        padding-left: 159px;
+        padding-right: 159px;
+    }
+}
 .mastersList__wrap {
     margin-bottom: 30px;
+    @media screen and (min-width: 768px){
+        min-width: 450px;
+    }
 
 }
 .mastersList__bottom {
     text-align: center;
-    // margin-bottom: 64px;
-
 }
 .mastersList{
     &__item:not(:last-child){
@@ -55,5 +67,13 @@
     }
     &__item:not(:last-child){
         margin-right: 10px;
+    }
+}
+
+.mastersList__item{
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

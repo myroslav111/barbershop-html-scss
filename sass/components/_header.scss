@@ -1,0 +1,69 @@
+.headerLine{
+    padding-top: 32px;
+    @media screen and (min-width:768px){
+        padding-top: 0;
+    }
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+    &__navList{
+        display: flex;
+    }
+    &__item{
+        &:not(:last-child){
+            margin-right: 24px;
+        }
+    }
+    &__link{
+        font-weight: 600;
+        font-size: getFont('textButton');
+        line-height: 1.33;
+        letter-spacing: 0.1em;
+        color: getColor('colorTitleHero');
+        &:hover, &:focus{
+            color: getColor('colorTextAccent');
+        }
+    }
+    &__tellAndBtn{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    &__button{
+        color: getColor('colorTitleHero');
+        margin-bottom: 20px;
+    }
+    &__nav{
+        margin-right: auto;
+    }
+}
+
+.logo{
+    fill: getColor('colorMain') ;
+    margin-right: 60px;
+    display: block;
+}
+
+.headerLineContainerHero{
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 768px){
+        position: absolute;
+        top: 40px;
+        right: 41px;
+        min-width: 678px;
+    }
+    @media screen and (max-width: 767.99px){
+        display: none;
+    }
+}
+
+.headerLineContainer{
+    @media screen and (min-width:768px){
+        display: none;
+    }
+}
+
+.heroContainer{
+    position: relative;
+}

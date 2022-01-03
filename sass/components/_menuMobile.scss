@@ -1,3 +1,6 @@
+.logo{
+    display: none;
+}
 .menu-container{
     position: fixed;
     top: 0;
@@ -11,6 +14,10 @@
     background-color: getColor('colorTitleHero');
     padding: 48px 31px 48px 40px;
     transition: transform 250ms ease-in-out;
+    z-index: 999;
+}
+.hero__item{
+    fill: getColor('colorTitleHero');
 }
 .menu-container.is-open{
     transform: translateX(0);
@@ -71,5 +78,5 @@
     &::before{
         @extend %before;
         margin-right: 40px;
-    }    
+    }       
 }

@@ -1,6 +1,9 @@
 .hero {
+    @media screen and (max-width: 767.99px) {       
     padding-top: 40px;
     padding-bottom: 183px;
+    padding-left: 31px;
+    padding-right: 31px;
     background-image: url('../css/../images/heroFirst.jpg') ;
     background-size: cover;
     background-position: center;
@@ -10,12 +13,17 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx){
         background-image: url('../css/../images/heroFirst@2x.jpg') ;
+    } 
     }
+   
     &__topLine{
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 112px;
+        @media screen and (min-width: 768px) {
+            display: none;           
+        }
     }
     &__pretitleText{
         @extend %preTitleTextStyle;
@@ -47,7 +55,63 @@
 }
 
 .heroContainer{
-    max-width: 480px;
-    max-height: 580px;
-    min-width: 320px;
+    @media screen and (max-width: 767.99px) {
+        max-height: 580px;
+        min-width: 320px;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        min-width: 768px;
+    }
 }
+
+.heroLeft{
+    @media screen and (max-width: 767.99px){
+        display: none;
+    }
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 40px;
+    }
+}
+
+.heroCommon__hero{
+    @media screen and (min-width:768px) {
+        // max-width: 576px;
+        padding: 280px 170px 185px 70px;
+        background-image: url('../css/../images/bgimgHeroTablet.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../css/../images/bgimgHeroTablet@2x.jpg');
+        }
+    }
+}
+
+.heroCommon__socialNetworksLink{
+    font-weight: 600;
+    font-size: getFont('textHero');
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: getColor('colorMain');
+    &:hover, &:focus{
+        color: getColor('colorTextAccent');
+    }
+}
+
+.heroCommon__socialNetworksList{
+    // display: flex;
+    // align-items: center;
+    transform: rotate(-90deg) translateX(50px);
+    &::before{
+        @extend %before;
+        margin-right: 40px;
+        border-bottom: 0.95px solid getColor('colorMain');
+    }
+}
+

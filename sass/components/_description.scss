@@ -1,5 +1,9 @@
 .description{
     @extend %sectionPadingMobile;
+    @media screen and (min-width: 768px){
+        padding-top: 100px;
+        padding-bottom: 76px;
+    }
     &__title{
         font-family: $fontsecond;
         font-weight: bold;
@@ -27,4 +31,28 @@
     @extend %preTitleTextStyle;
     color: getColor('colorMain');
     margin-bottom: 20px;
+}
+
+.description__left{
+    @media screen and (max-width: 767.99px){
+        display: none;
+    }
+    @media screen and (min-width: 768px){
+        min-width: 330px;
+        max-height: 503px;
+    }
+}
+
+.description__right{
+    @media screen and (min-width: 768px) {
+        padding-left: 30px;
+    }
+}
+
+.descriptionContainer{
+    display: flex;
+}
+
+.description__item:not(:last-child){
+    margin-bottom: 30px;
 }

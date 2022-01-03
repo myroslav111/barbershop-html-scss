@@ -14,56 +14,119 @@
 </head>
 <body>
     <header>
+        <!-- <section class="headerLine">
+            <div class="container headerLineContainer">
+                <a class="logo" href="">
+                    <svg class="logo__item " width="65" height="55"><use href="./icon/symbol-defs.svg#icon-Logo"></use></svg>
+                </a>
+                <nav class="headerLine__nav">
+                    <ul class="headerLine__navList">
+                        <li class="headerLine__item"><a class="headerLine__link" href="#about">О нас</a></li>
+                        <li class="headerLine__item"><a class="headerLine__link" href="">Услуги и цены</a></li>
+                        <li class="headerLine__item"><a class="headerLine__link" href="">Мастера</a></li>
+                        <li class="headerLine__item"><a class="headerLine__link" href="">Контакты</a></li>        
+                    </ul>
+                </nav>
+                <div class="headerLine__tellAndBtn">          
+                    <a class="headerLine__link mobileTell" href="">+38 044 111 11 11</a>
+                    <button class="headerLine__button button">онлайн-запись</button>
+                </div> 
+            </div>
+        </section> -->
         <section class="menuMobile">
-            <div class="menu-container js-menu-container" id="mobile-menu">
-                <div class="menuMobile__topLine">
+            <div class="menu-container js-menu-container" id="mobile-menu">               
+                <div class="menuMobile__topLine">                        
                     <span class="menuMobile__buttonClose">
                     <button class="menu-toggle js-close-menu btn">
                         <svg class="menuMobile__close" width="18" height="18"><use href="icon/symbol-defs.svg#icon-close"></use></svg>
                     </button>
                     </span>
                 </div>
-                <ul class="menuMobile__navList">
-                    <li class="mrnuMobile__item"><a class="menuMobile__link" href="#about">О нас</a></li>
-                    <li class="mrnuMobile__item"><a class="menuMobile__link" href="">Услуги и цены</a></li>
-                    <li class="mrnuMobile__item"><a class="menuMobile__link" href="">Мастера</a></li>
-                    <li class="mrnuMobile__item"><a class="menuMobile__link" href="">Контакты</a></li>        
-                </ul>
-                <a class="menuMobile__link menuMobileTell" href="">+38 044 111 11 11</a>
-                <button class="menuMobile__button button">онлайн-запись</button>
-                <ul class="menuMobile__socialNetworksList">
-                    <li class="menuMobile__socialNetworksItem"><a class="menuMobile____socialNetworksLink beforMobileMenu" href="">Instagram</a></li>
-                    <li class="menuMobile__socialNetworksItem"><a class="menuMobile____socialNetworksLink" href="">Youtube</a></li>
-                </ul>
+                <nav>
+                    <ul class="menuMobile__navList">
+                        <li class="mrnuMobile__item"><a class="menuMobile__link" href="#about">О нас</a></li>
+                        <li class="mrnuMobile__item"><a class="menuMobile__link" href="">Услуги и цены</a></li>
+                        <li class="mrnuMobile__item"><a class="menuMobile__link" href="">Мастера</a></li>
+                        <li class="mrnuMobile__item"><a class="menuMobile__link" href="">Контакты</a></li>        
+                    </ul>
+                </nav>
+                <div>
+                    <a class="menuMobile__link menuMobileTell" href="">+38 044 111 11 11</a>
+                    <button class="menuMobile__button button">онлайн-запись</button>
+                    <ul class="menuMobile__socialNetworksList">
+                        <li class="menuMobile__socialNetworksItem"><a class="menuMobile____socialNetworksLink beforMobileMenu" href="">Instagram</a></li>
+                        <li class="menuMobile__socialNetworksItem"><a class="menuMobile____socialNetworksLink" href="">Youtube</a></li>
+                    </ul>
+                </div>
             </div>
         </section>
     </header>
-    <main>
-        <section class="hero">
-            <div class="container heroContainer">
-                <div class="hero__topLine">
-                    <a class="hero__logo" href="">
-                        <svg class="hero__item " width="68" height="55"><use href="./icon/symbol-defs.svg#icon-Logo"></use></svg>
-                    </a>
-                    <span class="hero__buttonBurger">
-                        <button class="menu-toggle js-open-menu btn"
-                        aria-expanded="false"
-                        aria-controls="mobile-menu"><svg class="menu" width="40" height="40"><use href="icon/symbol-defs.svg#icon-menu_40px"></use></svg></button>
-                    </span>
-                </div>
-                <p class="hero__pretitleText">A hair salon for men in Kyiv</p>
-                <h1 class="hero__title">BarberShop</h1>
-                <p class="hero__subtitleText subtitleText">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
-            </div>
 
+    <main>
+        <section class="heroCommon hero">
+            <div class="container heroContainer">
+                <div class="heroCommon__link heroLeft">
+                    <ul class="heroCommon__socialNetworksList">
+                        <li class="heroCommon__socialNetworksItem"><a class="heroCommon__socialNetworksLink instagram" href="">Instagram</a></li>
+                        <li class="heroCommon__socialNetworksItem"><a class="heroCommon__socialNetworksLink" href="">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="heroCommon__hero">                      
+                    <div class="hero__topLine">
+                        <a class="hero__logo" href="">
+                            <svg class="hero__item" width="68" height="55"><use href="./icon/symbol-defs.svg#icon-Logo"></use></svg>
+                        </a>
+                        <span class="hero__buttonBurger">
+                            <button class="menu-toggle js-open-menu btn"
+                            aria-expanded="false"
+                            aria-controls="mobile-menu"><svg class="menu" width="40" height="40"><use href="icon/symbol-defs.svg#icon-menu_40px"></use></svg></button>
+                        </span>
+                    </div>
+                    <div class="headerLineContainerHero">
+                        <a class="logo" href="">
+                            <svg class="logo__item " width="65" height="55"><use href="./icon/symbol-defs.svg#icon-Logo"></use></svg>
+                        </a>
+                        <nav class="headerLine__nav">
+                            <ul class="headerLine__navList">
+                                <li class="headerLine__item"><a class="headerLine__link" href="#about">О нас</a></li>
+                                <li class="headerLine__item"><a class="headerLine__link" href="">Услуги и цены</a></li>
+                                <li class="headerLine__item"><a class="headerLine__link" href="">Мастера</a></li>
+                                <li class="headerLine__item"><a class="headerLine__link" href="">Контакты</a></li>        
+                            </ul>
+                        </nav>
+                        <div class="headerLine__tellAndBtn">          
+                            <a class="headerLine__link mobileTell" href="">+38 044 111 11 11</a>
+                            <button class="headerLine__button button">онлайн-запись</button>
+                        </div> 
+                    </div>
+                    <p class="hero__pretitleText">A hair salon for men in Kyiv</p>
+                    <h1 class="hero__title">BarberShop</h1>
+                    <p class="hero__subtitleText subtitleText">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>            
+                </div>
+            </div>
         </section>
+
         <section class="description">
             <div class="container descriptionContainer">
-                <p class="description__pretitleText pretitleText" id="about">О НАС</p>
-                <h3 class="description__title">Лучший Барбершоп твоего города</h3>
-                <p class="description__subtitleText subtitleText">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-                <p class="description__text">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-                <button class="description__button button" type="button">онлайн-запись</button>
+                <div class="description__left">
+                    <ul class="description__listPhoto">
+                        <li class="description__item"><picture>
+                            <source srcset="./images/firstAbout.webp 1x, ./images/firstAbout@2x.webp 2x" type="image/webp">
+                            <img src="./images/firstAbout.jpg" alt="барбер в рaботе" width="330px" height="235px">
+                        </picture></li>
+                        <li class="description__item"><picture>
+                            <source srcset="./images/secondAbout.webp 1x, ./images/secondAbout@2x.webp 2x" type="image/webp">
+                            <img src="./images/secondAbout.jpg" alt="барбер в рaботе" width="330px" height="235px">
+                        </picture></li>
+                    </ul>
+                </div>
+                <div class="description__right">
+                    <p class="description__pretitleText pretitleText" id="about">О НАС</p>
+                    <h3 class="description__title">Лучший Барбершоп твоего города</h3>
+                    <p class="description__subtitleText subtitleText">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+                    <p class="description__text">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
+                    <button class="description__button button" type="button">онлайн-запись</button>
+                </div>
             </div>
         </section>
 
@@ -127,7 +190,7 @@
                         <div class="mastersList__wrap">
                             <picture>
                                 <source srcset="./images/img1JohnSmith.webp 1x, ./images/img1JohnSmith@2x.webp 2x" type="image/webp"/>
-                                <img src="./images/img1JohnSmith.jpg" alt="барбер стрижет клиента" width="418px" height="346px">
+                                <img src="./images/img1JohnSmith.jpg" alt="барбер стрижет клиента" width="450px" height="346px">
                             </picture></div>
                         <div class="mastersList__bottom">
                             <h4 class="mastersList__name">John Smith</h4>
@@ -160,7 +223,7 @@
                         <div class="mastersList__wrap">
                             <picture>
                                 <source srcset="./images/img2MicheleDoe.webp 1x, ./images/img2MicheleDoe@2x.webp 2x " type="image/webp">
-                            <img src="./images/img2MicheleDoe.jpg" alt="барбер стрижет клиента" width="418px" height="346px"></picture></div>
+                            <img src="./images/img2MicheleDoe.jpg" alt="барбер стрижет клиента" width="450px" height="346px"></picture></div>
                         <div class="mastersList__bottom">
                             <h4 class="mastersList__name">Michele Doe</h4>
                             <p class="mastersList__subname">Extreme Barber</p>
@@ -192,7 +255,7 @@
                         <div class="mastersList__wrap">
                             <picture>
                                 <source srcset="./images/img3AlanBlack.webp 1x, ./images/img3AlanBlack@2x.webp 2x" type="image/webp">
-                            <img src="./images/img3AlanBlack.jpg" alt="барбер стрижет клиента" width="418px" height="346px"></picture></div>
+                            <img src="./images/img3AlanBlack.jpg" alt="барбер стрижет клиента" width="450px" height="346px"></picture></div>
                         <div class="mastersList__bottom">
                             <h4 class="mastersList__name">Alan Black</h4>
                             <p class="mastersList__subname">Extreme Barber</p>
@@ -260,10 +323,10 @@
                 </form>
             </div>
         </section>
-        <section class="contacts">
-            <div class="container contactsContainer">
-                <h2 class="contacts__title title">Контакты</h2>
+        <section class="contacts">            
+            <div class="container contactsContainer">               
                 <address class="contactsAddress">
+                    <h2 class="contacts__title title">Контакты</h2>
                     <ul class="contactsList list">
                         <li class="contactsList__item">
                             <a class="contactsList__link location" href="">
@@ -288,8 +351,10 @@
                         </li>
                     </ul>
                 </address>
-                <p class="contacts__timeWork pretitleText">время работы</p>
-                <p class="contacts__time">Ежедневно с 9:00 до 22:00</p>
+                <div class="contact__workTime">
+                    <p class="contacts__timeWork pretitleText">время работы</p>
+                    <p class="contacts__time">Ежедневно с 9:00 до 22:00</p>
+                </div>
             </div>
         </section>
     </main>

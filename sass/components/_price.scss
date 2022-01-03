@@ -4,6 +4,12 @@
 .price{
     @extend %sectionPadingMobile;
     background-color: getColor('backgroundPrimary');
+    @media screen and (min-width: 768px){
+        background-image: url('../css/../images/imgprice.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     &__btnCentr{
         text-align: center;
     }
@@ -25,9 +31,15 @@
     line-height: 2.14;
     letter-spacing: 0.02em;
     color: getColor('colotSecondTextHero');
+    @media screen and (min-width: 768px){
+        font-size: getFont('textAny');
+    }
 }
 .priceList__cost{
     @extend .priceList__service;
+    @media screen and (min-width: 768px){
+        font-size: getFont('textAny');
+    }
     // &::before{
     //     content: '';
     //     display: inline-block;
