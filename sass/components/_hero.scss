@@ -95,7 +95,7 @@
 
 .heroCommon__hero{
     @media screen and (min-width: 768px) and (max-width: 1279.99px) {
-        // max-width: 576px;
+        width: 100%;
         padding: 280px 170px 185px 70px;
         background-image: url('../css/../images/bgimgHeroTablet.jpg');
         background-size: cover;
@@ -109,6 +109,7 @@
         }
     }
     @media screen and (min-width: 1280px){
+        width: 100%;
         padding: 272px 452px 206px 96px;
         background-image: url('../css/../images/heroDesktop.jpg');
         background-size: cover;
