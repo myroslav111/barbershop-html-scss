@@ -15,6 +15,9 @@
         background-image: url('../css/../images/heroFirst@2x.jpg') ;
     } 
     }
+    @media screen and (min-width: 1280px) {
+        padding-right: 59px;
+    }
    
     &__topLine{
         display: flex;
@@ -59,9 +62,14 @@
         max-height: 580px;
         min-width: 320px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1279.99px) {
         display: flex;
         min-width: 768px;
+    }
+    @media screen and (min-width: 1280px){
+        min-width: 1221px;
+        display: flex;
+
     }
 }
 
@@ -73,6 +81,9 @@
         display: flex;
         align-items: flex-end;
         padding-bottom: 40px;
+    }
+    @media screen and (min-width: 1280px){
+        min-width: 148px;
     }
 }
 

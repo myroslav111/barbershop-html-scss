@@ -26,9 +26,7 @@
         &:hover, &:focus{
             color: getColor('colorTextAccent');
         }
-        @media screen and (min-width: 1280px){
-            margin-right: 40px;
-        }
+
     }
     &__tellAndBtn{
         @media  screen and (max-width: 1279.99px){
@@ -50,12 +48,22 @@
     }
     &__nav{
         margin-right: auto;
+        @media screen and (min-width: 1280px){
+            margin-right: 320px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .mobileTell{
+        margin-right: 40px;
     }
 }
 
 .logo{
     @media screen and (min-width: 1280px){
         display: inherit;
+        margin-right: 70px;
     }
     fill: getColor('colorMain') ;
     margin-right: 60px;
@@ -66,15 +74,19 @@
 .headerLineContainerHero{
     display: flex;
     align-items: center;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) and (max-width: 1279.99px){
         position: absolute;
         top: 40px;
         right: 41px;
         min-width: 678px;
     }
     @media screen and (min-width: 1280px){
-        background-color: brown;
-        min-width: 1221px;
+        // background-color: brown;
+        // max-width: 1221px;
+        position: absolute;
+        top: 32px;
+        left: 53px;
+
     }
     @media screen and (max-width: 767.99px){
         display: none;
