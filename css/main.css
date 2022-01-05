@@ -207,6 +207,15 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 1.18;
+    color: #FFFFFF;
+  }
+}
+
 .hero__subtitleText {
   color: #9DA4BD;
 }
@@ -312,6 +321,13 @@ body {
 .heroCommon__socialNetworksList::before {
   margin-right: 40px;
   border-bottom: 0.95px solid #303030;
+}
+
+@media screen and (min-width: 1280px) {
+  .heroCommon__socialNetworksList {
+    -webkit-transform: rotate(-90deg) translateX(50px) translateY(30px);
+            transform: rotate(-90deg) translateX(50px) translateY(30px);
+  }
 }
 
 @media screen and (min-width: 768px) {

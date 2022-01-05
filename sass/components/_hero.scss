@@ -47,6 +47,12 @@
         letter-spacing: 0.05em;
         color: getColor('colorTitleHero');
         margin-bottom: 20px;
+        @media screen and (min-width: 1280px){
+            font-weight: bold;
+            font-size: getFont('titleMainLaptop');
+            line-height: 1.18;
+            color: #FFFFFF;
+        }
     }
     &__subtitleText{
         @extend %subTitleTextStyle;
@@ -129,13 +135,14 @@
 }
 
 .heroCommon__socialNetworksList{
-    // display: flex;
-    // align-items: center;
     transform: rotate(-90deg) translateX(50px);
     &::before{
         @extend %before;
         margin-right: 40px;
         border-bottom: 0.95px solid getColor('colorMain');
+    }
+    @media screen and (min-width: 1280px){
+        transform: rotate(-90deg) translateX(50px) translateY(30px);
     }
 }
 

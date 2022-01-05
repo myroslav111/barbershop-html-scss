@@ -28,6 +28,7 @@ $fontSize: (
     'textDescriptionTeam': 14px,
     'textButton': 12px,
     'textAny': 18px,
+    'titleMainLaptop': 72px
 );
 @function getFont($key) {
 @return map-get($fontSize , $key);
