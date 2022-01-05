@@ -77,7 +77,7 @@
 }
 
 .heroCommon__hero{
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) and (max-width: 1279.99px) {
         // max-width: 576px;
         padding: 280px 170px 185px 70px;
         background-image: url('../css/../images/bgimgHeroTablet.jpg');
@@ -89,6 +89,19 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: url('../css/../images/bgimgHeroTablet@2x.jpg');
+        }
+    }
+    @media screen and (min-width: 1280px){
+        padding: 272px 452px 206px 96px;
+        background-image: url('../css/../images/heroDesktop.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../css/../images/heroDesktop@2x.jpg');
         }
     }
 }

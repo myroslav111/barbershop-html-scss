@@ -12,6 +12,9 @@
     &__item{
         &:not(:last-child){
             margin-right: 24px;
+            @media screen and (min-width: 1280px){
+                margin-right: 40px;
+            }
         }
     }
     &__link{
@@ -23,15 +26,27 @@
         &:hover, &:focus{
             color: getColor('colorTextAccent');
         }
+        @media screen and (min-width: 1280px){
+            margin-right: 40px;
+        }
     }
     &__tellAndBtn{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
+        @media  screen and (max-width: 1279.99px){
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        @media screen and (min-width: 1280px){
+            display: flex;
+            align-items: center;
+        }
     }
     &__button{
         color: getColor('colorTitleHero');
         margin-bottom: 20px;
+        @media screen and (min-width: 1280px){
+            margin-bottom: 0;
+        }
     }
     &__nav{
         margin-right: auto;
@@ -39,9 +54,13 @@
 }
 
 .logo{
+    @media screen and (min-width: 1280px){
+        display: inherit;
+    }
     fill: getColor('colorMain') ;
     margin-right: 60px;
     display: block;
+
 }
 
 .headerLineContainerHero{
@@ -52,6 +71,10 @@
         top: 40px;
         right: 41px;
         min-width: 678px;
+    }
+    @media screen and (min-width: 1280px){
+        background-color: brown;
+        min-width: 1221px;
     }
     @media screen and (max-width: 767.99px){
         display: none;
