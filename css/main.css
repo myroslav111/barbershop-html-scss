@@ -160,6 +160,7 @@ body {
 @media screen and (min-width: 1280px) {
   .hero {
     padding-right: 59px;
+    max-width: 1280px;
   }
 }
 
