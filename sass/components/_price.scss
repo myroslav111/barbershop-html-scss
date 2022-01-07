@@ -10,6 +10,10 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+    @media screen and (min-width: 1279.99px){
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
     &__btnCentr{
         text-align: center;
     }
@@ -21,11 +25,36 @@
     @extend %titleBig;
     margin-bottom: 44px;
 }
+
+.price__laptopPriceWrap{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    @media screen and (max-width: 1279.99px){
+    display: none;
+    }
+}
+
 .priceWrap{
     padding: 30px;
     background-image: getColor('backgrounColor');
     margin-bottom: 80px;
+    @media screen and (min-width: 1280px){
+        margin-bottom: 0;
+        padding: 30px 40px;
+    }
 }
+
+.laptopPriceWrap{
+    width: calc(100%/2);
+}
+
+.mainPriceWrap{
+    @media screen and (min-width: 1280px){
+        display: none;
+    }
+}
+
 .priceList__service{
     font-size: getFont('textDescriptionTeam');
     line-height: 2.14;

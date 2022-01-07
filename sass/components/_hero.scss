@@ -16,8 +16,8 @@
     } 
     }
     @media screen and (min-width: 1280px) {
-        padding-right: 59px;
-        max-width: 1280px;
+        // padding-right: 59px;
+        // max-width: 1280px;
     }
    
     &__topLine{
@@ -74,6 +74,8 @@
         min-width: 768px;
     }
     @media screen and (min-width: 1280px){
+        padding-left: 0;
+        padding-right: 59px;
         min-width: 1221px;
         display: flex;
 

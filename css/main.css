@@ -19,6 +19,16 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .container {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1280px;
+  }
+}
+
 .hero__pretitleText, .pretitleText {
   font-weight: 600;
   font-size: 11px;
@@ -157,13 +167,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .hero {
-    padding-right: 59px;
-    max-width: 1280px;
-  }
-}
-
 .hero__topLine {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,6 +242,8 @@ body {
 
 @media screen and (min-width: 1280px) {
   .heroContainer {
+    padding-left: 0;
+    padding-right: 59px;
     min-width: 1221px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -340,6 +345,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .description {
+    padding-top: 130px;
+    padding-bottom: 121px;
+  }
+}
+
 .description__title {
   font-family: "Raleway";
   font-weight: bold;
@@ -350,9 +362,23 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1279.99px) {
+  .description__title {
+    font-size: 42px;
+    line-height: 1.16;
+  }
+}
+
 .description__subtitleText {
   color: #555555;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1279.99px) {
+  .description__subtitleText {
+    font-size: 18px;
+    line-height: 1.66;
+  }
 }
 
 .description__text {
@@ -381,7 +407,37 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1279.99px) {
+  .description__left {
+    display: none;
+  }
+}
+
+.description__leftLaptop {
+  margin-right: 64px;
+}
+
+@media screen and (max-width: 1279.99px) {
+  .description__leftLaptop {
+    display: none;
+  }
+}
+
+.description__itemLaptop {
+  min-width: 270px;
+}
+
+.description__itemLaptop:not(:last-child) {
+  margin-right: 30px;
+}
+
+.description__listPhotoLaptop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.99px) {
   .description__right {
     padding-left: 30px;
   }
@@ -414,6 +470,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1279.99px) {
+  .price {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
 .price__btnCentr {
   text-align: center;
 }
@@ -426,11 +489,44 @@ body {
   margin-bottom: 44px;
 }
 
+.price__laptopPriceWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1279.99px) {
+  .price__laptopPriceWrap {
+    display: none;
+  }
+}
+
 .priceWrap {
   padding: 30px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#171A24), to(rgba(23, 26, 36, 0.2)));
   background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
   margin-bottom: 80px;
+}
+
+@media screen and (min-width: 1280px) {
+  .priceWrap {
+    margin-bottom: 0;
+    padding: 30px 40px;
+  }
+}
+
+.laptopPriceWrap {
+  width: calc(100%/2);
+}
+
+@media screen and (min-width: 1280px) {
+  .mainPriceWrap {
+    display: none;
+  }
 }
 
 .priceList__service, .priceList__cost {

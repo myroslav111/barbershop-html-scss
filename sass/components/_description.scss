@@ -4,6 +4,10 @@
         padding-top: 100px;
         padding-bottom: 76px;
     }
+    @media screen and (min-width: 1280px){
+        padding-top: 130px;
+        padding-bottom: 121px;
+    }
     &__title{
         font-family: $fontsecond;
         font-weight: bold;
@@ -12,11 +16,19 @@
         letter-spacing: 0.05em;
         color: getColor('colorMain');
         margin-bottom: 20px;
+        @media screen and (min-width: 1279.99px){
+            font-size: getFont('titleFlow');
+            line-height: 1.16;
+        }
     }
     &__subtitleText{
         @extend %subTitleTextStyle;
         color: getColor('colorSecond');
         margin-bottom: 20px;
+        @media screen and (min-width: 1279.99px){
+            font-size: getFont('textAny');
+            line-height: 1.66;
+        }
     }
     &__text{
         font-size: getFont('textDescriptionTeam');
@@ -41,10 +53,30 @@
         min-width: 330px;
         max-height: 503px;
     }
+    @media screen and (min-width: 1279.99px){
+        display: none;
+    }
+}
+
+.description__leftLaptop{
+    margin-right: 64px;
+    @media screen and (max-width: 1279.99px){
+        display: none;
+    }
+}
+.description__itemLaptop{
+    min-width: 270px;
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+
+.description__listPhotoLaptop{
+    display: flex;
 }
 
 .description__right{
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1279.99px) {
         padding-left: 30px;
     }
 }
