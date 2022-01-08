@@ -557,6 +557,13 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 1280px) {
+  .benefits {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
 .benefits__title {
   color: #303030;
 }
@@ -566,7 +573,27 @@ body {
   letter-spacing: 0.02em;
   color: #555555;
   font-family: 18px;
-  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1279.99px) {
+  .benefits__textContent {
+    margin-bottom: 44px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .benefitsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 
 @media screen and (max-width: 767.99px) {
@@ -580,6 +607,12 @@ body {
   .blocBenefits {
     margin-left: auto;
     max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .blocBenefits {
+    margin-right: 130px;
   }
 }
 
@@ -602,6 +635,26 @@ body {
 @media screen and (min-width: 768px) {
   .benefitsList__item {
     min-width: 210px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .benefitsList__item {
+    min-width: 170px;
+    min-height: 133px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -665,11 +718,18 @@ body {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .masters {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
 .masters__title {
   color: #303030;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279.99px) {
   .mastersContainer {
     padding-left: 159px;
     padding-right: 159px;
@@ -680,7 +740,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279.99px) {
   .mastersList__wrap {
     min-width: 450px;
   }
@@ -690,8 +750,23 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 1280px) {
+  .mastersList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .mastersList__item:not(:last-child) {
   margin-bottom: 64px;
+}
+
+@media screen and (min-width: 1280px) {
+  .mastersList__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
 }
 
 .mastersList__name {
@@ -709,6 +784,12 @@ body {
   letter-spacing: 0.02em;
   color: #FF6C00;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1280px) {
+  .mastersList__photo {
+    max-width: 370px;
+  }
 }
 
 .socialNetworksList {

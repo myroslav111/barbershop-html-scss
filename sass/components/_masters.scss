@@ -5,21 +5,28 @@
         padding-top: 100px;
         padding-bottom: 100px;
     }
+    @media screen and (min-width: 1280px){
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
     &__title{
         color: getColor('colorMain');
     }
 }
 
 .mastersContainer{
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) and (max-width: 1279.99px){
         padding-left: 159px;
         padding-right: 159px;
     }
 }
 .mastersList__wrap {
     margin-bottom: 30px;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) and (max-width: 1279.99px){
         min-width: 450px;
+    }
+    @media screen and (min-width: 1280px){
+
     }
 
 }
@@ -27,8 +34,15 @@
     text-align: center;
 }
 .mastersList{
+    @media screen and (min-width: 1280px){
+        display: flex;
+    }
     &__item:not(:last-child){
         margin-bottom: 64px;
+        @media screen and (min-width: 1280px){
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
     }
     &__name{
         font-size: getFont('textAny');
@@ -44,6 +58,12 @@
         letter-spacing: 0.02em;
         color: getColor('colorTextAccent');
         margin-bottom: 30px;
+    }
+    &__photo{
+        @media screen and (min-width: 1280px){
+            max-width: 370px;
+            // min-height: 346px;
+        }
     }
 }
 .socialNetworksList{

@@ -1,5 +1,9 @@
 .benefits {
     @extend %sectionPadingMobile;
+    @media screen and (min-width: 1280px){
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
     &__title{
         color: getColor('colorMain');
     }
@@ -8,9 +12,23 @@
         letter-spacing: 0.02em;
         color: getColor('colorSecond');
         font-family: getFont('textAny');
-        margin-bottom: 20px;
     }
 }
+
+.benefits__textContent{
+    @media screen and (max-width: 1279.99px){
+        margin-bottom: 44px;
+    }       
+}
+
+.benefitsContainer{
+    @media screen and (min-width: 1280px){
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+}
+
 .blocBenefits{
     @media screen and (max-width: 767.99px){
         max-width: 418px;
@@ -21,7 +39,12 @@
         margin-left: auto;
         max-width: 450px;
     }
+
+    @media screen and (min-width: 1280px){
+        margin-right: 130px;
+    }
 }
+
 .benefitsList {
     display: flex;
     flex-wrap: wrap;
@@ -32,6 +55,14 @@
         background-color: getColor('backgrounColorWhit');
         @media screen and (min-width: 768px){
             min-width: 210px;
+        }
+        @media screen and (min-width: 1280px){
+            min-width: 170px;
+            min-height: 133px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
         }
         &:nth-child(even){
             margin-top: 30px;
