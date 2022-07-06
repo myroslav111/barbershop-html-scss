@@ -25,9 +25,15 @@
 }
 
 .portfolioList{
+
     @media screen and (min-width: 768px){
         display: flex;
         flex-wrap: wrap;
+        margin: -15px;
+    }
+    @media screen and (min-width: 1024px){
+        display: flex;
+        flex-wrap: nowrap;
         margin: -15px;
     }
 }
