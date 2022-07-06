@@ -887,6 +887,17 @@ body {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .portfolioList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: -15px;
+  }
+}
+
 .form {
   background-color: #191C26;
 }
@@ -1051,6 +1062,16 @@ body {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contactsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
